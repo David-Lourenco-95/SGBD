@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="499.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bdtp.ConsultaController">
+   <children>
+      <TableView fx:id="Tabela_Consulta" layoutX="12.0" layoutY="69.0" prefHeight="231.0" prefWidth="830.0">
+        <columns>
+          <TableColumn fx:id="Con_Atual" prefWidth="45.0" text="Atual" />
+          <TableColumn fx:id="Con_Proveniente" prefWidth="75.0" text="Proveniente" />
+            <TableColumn fx:id="Con_Sintoma" prefWidth="60.0" text="Sintomas" />
+            <TableColumn fx:id="Con_Diagnostico" prefWidth="72.0" text="Diagnostico" />
+            <TableColumn fx:id="Con_Descricao" prefWidth="62.0" text="Descrição" />
+            <TableColumn fx:id="con_Tipo" prefWidth="38.0" text="Tipo" />
+            <TableColumn fx:id="Con_Estado" prefWidth="48.0" text="Estado" />
+            <TableColumn fx:id="Con_Especialidade" prefWidth="86.0" text="Especialidade" />
+            <TableColumn fx:id="Con_Sala" prefWidth="36.0" text="Sala" />
+            <TableColumn fx:id="Con_Equipa" prefWidth="46.0" text="Equipa" />
+            <TableColumn fx:id="Con_Utente" prefWidth="43.0" text="Utente" />
+            <TableColumn fx:id="Con_Ano" prefWidth="39.0" text="Ano" />
+            <TableColumn fx:id="Con_Mes" prefWidth="32.0" text="Mes" />
+            <TableColumn fx:id="Con_Dia" prefWidth="31.0" text="Dia" />
+            <TableColumn fx:id="Con_Hora" prefWidth="53.0" text="Hora" />
+            <TableColumn fx:id="Con_Minuto" prefWidth="63.0" text="Minuto" />
+        </columns>
+      </TableView>
+      <Label layoutX="22.0" layoutY="5.0" prefHeight="33.0" prefWidth="192.0" text="Consulta e Meios Complementares" />
+      <ChoiceBox fx:id="EscolhaConsulta" layoutX="22.0" layoutY="31.0" prefWidth="150.0" />
+      <Button layoutX="182.0" layoutY="31.0" mnemonicParsing="false" onAction="#VerConsulta" text="Ok" />
+      <Label layoutX="41.0" layoutY="326.0" text="Sintomas" />
+      <TextField fx:id="Sintoma" layoutX="97.0" layoutY="322.0" />
+      <Label layoutX="260.0" layoutY="326.0" text="Diagnostico" />
+      <TextField fx:id="Diagnostico" layoutX="329.0" layoutY="322.0" />
+      <Label layoutX="487.0" layoutY="326.0" text="Descrição" />
+      <TextField fx:id="Descricao" layoutX="545.0" layoutY="322.0" />
+      <Label layoutX="40.0" layoutY="361.0" text="Tipo" />
+      <TextField fx:id="Tipo" layoutX="73.0" layoutY="357.0" />
+      <Label layoutX="245.0" layoutY="361.0" text="Estado" />
+      <TextField fx:id="Estado" layoutX="292.0" layoutY="357.0" />
+      <Label layoutX="456.0" layoutY="361.0" text="Especialidade" />
+      <Label layoutX="40.0" layoutY="397.0" text="Ano" />
+      <Label layoutX="245.0" layoutY="397.0" text="Sala" />
+      <Label layoutX="441.0" layoutY="397.0" text="Equipa" />
+      <Label layoutX="40.0" layoutY="432.0" text="Utente" />
+      <ChoiceBox fx:id="Sala" layoutX="281.0" layoutY="393.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="Equipa" layoutX="492.0" layoutY="393.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="Utente" layoutX="88.0" layoutY="428.0" prefWidth="150.0" />
+      <Button layoutX="764.0" layoutY="438.0" mnemonicParsing="false" onAction="#AddConsulta" prefHeight="25.0" prefWidth="63.0" text="Finalizar" />
+      <Button layoutX="764.0" layoutY="402.0" mnemonicParsing="false" onAction="#Cancelar" prefHeight="25.0" prefWidth="63.0" text="Voltar" />
+      <Button layoutX="592.0" layoutY="29.0" mnemonicParsing="false" onAction="#VerConsulta4" text="Listar Tudo" />
+      <Button layoutX="684.0" layoutY="29.0" mnemonicParsing="false" onAction="#LimparTabela" text="Limpar" />
+      <Label layoutX="253.0" layoutY="433.0" text="Mes" />
+      <Label layoutX="386.0" layoutY="433.0" text="Dia" />
+      <Label layoutX="504.0" layoutY="433.0" text="Hora" />
+      <Label layoutX="39.0" layoutY="463.0" text="Minuto" />
+      <ChoiceBox fx:id="Especialidade" layoutX="536.0" layoutY="357.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="Minuto" layoutX="88.0" layoutY="459.0" prefHeight="25.0" prefWidth="122.0" />
+      <ChoiceBox fx:id="Mes" layoutX="281.0" layoutY="429.0" prefHeight="25.0" prefWidth="101.0" />
+      <ChoiceBox fx:id="Dia" layoutX="412.0" layoutY="429.0" prefHeight="25.0" prefWidth="82.0" />
+      <ChoiceBox fx:id="Hora" layoutX="536.0" layoutY="429.0" prefHeight="25.0" prefWidth="108.0" />
+      <ChoiceBox fx:id="Ano" layoutX="73.0" layoutY="393.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
